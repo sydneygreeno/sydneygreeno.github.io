@@ -1,0 +1,220 @@
+<style> 
+            body{
+                background-color: #000000;
+                background-image: url("/Users/sydneygreeno/Desktop/untitled folder/my-website/backg.gif");
+                background-repeat: none;
+                background-size:100%;
+                background-position: fixed;  
+            }
+            * {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            .buttons{
+                padding: 15px 32px;
+                text-align: center;
+                transform: translateX(400px) translateY(-120px);
+                position:fixed;
+                
+            }
+            .btn-hover {
+                background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+                box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+                width: 200px;
+                color: #fff;
+                cursor: pointer;
+                margin: 20px;
+                height: 55px;
+                text-align:center;
+                font-size: 20px;
+                transition-duration: 0.4s;
+                font-family: 'Courier New', monospace;
+                font-style: italic;
+                border: none;
+                background-size: 300% 100%;
+                
+
+                border-radius: 50px;
+                -moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+            }
+            .btn-hover:hover {
+                background-position: 100% 0;
+                -moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+            }
+            .btn-hover:focus {
+                outline: none;
+            }
+            .btn-hover2 {
+                background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+                box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+                width: 200px;
+                color: #fff;
+                cursor: pointer;
+                font-size: 20px;
+                transition-duration: 0.4s;
+                font-family: 'Courier New', monospace;
+                font-style: italic;
+                margin: 20px;
+                height: 55px;
+                text-align:center;
+                border: none;
+                background-size: 300% 100%;
+
+                border-radius: 50px;
+                -moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+            }
+            .btn-hover2:hover {
+                background-position: 100% 0;
+                -moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+            }
+            .btn-hover2:focus {
+                outline: none;
+            }
+            
+            .box{
+                width: 600px;
+                height: 250px;
+                background: rgba(240, 240, 240, 0.6);
+                border-radius: 30px;
+                padding: 10px;
+                text-align: center;
+                margin: flex;
+                transform: translateX(360px);
+                margin-top: 125px;
+                font-family: 'Wendy One'; 
+                font-weight: 700;
+                
+                animation: fudge 5s 2s infinite;
+            }
+            .box h1{
+                font-size: 3rem;
+                letter-spacing: 5px;
+                position: relative;
+                text-shadow:
+                    0.05em 0 0 rgba(255,0,0,.75),
+                    -0.025em -0.05em 0 rgba(0,255,0,.75),
+                    0.025em 0.05em 0 rgba(0,0,255,.75);
+                animation: glitch 1000ms infinite;
+            }
+            .box h1 span{
+                position:absolute;
+                top:0;
+                left:0;
+            }
+
+            .box h1 span:first-child {
+                animation: glitch 2000ms infinite;
+                clip-path: polygon(0 0, 100% 0, 100% 25%, 0 25%);
+                transform: translate(1.1em, .05em);
+                opacity: 0.5;
+            }
+
+            .box h1 span:last-child {
+                animation: glitch 375ms infinite;
+                clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+                transform: translate(1em, 0em);
+                opacity: 0.5;
+            }
+
+            .box h5{
+                font-size: 20px;
+                letter-spacing: 3px;
+                font-weight: 100;
+                font-family: 'Courier New', monospace;
+                font-style: italic;
+            }               
+            .contact{
+                background:rgba(239, 227, 240, 0.5);
+                width: 250px;
+                height: 100px;
+                border-radius: 15px;
+                padding: 5px;
+                text-align: center;
+                margin-left: 10px;
+                margin-top: 10px;
+                padding-left: 5px;
+                font-size: 11px;
+                font-family: 'Courier New', monospace;
+                font-weight: 10;
+                letter-spacing: 10px;
+                animation:glitch-2 10s 2s infinite;
+            }
+            .links{
+                text-align: center;
+                font-size: 15px;
+                font-style: italic;
+                font-weight: 700;
+                font-family: monospace;
+                letter-spacing: 3px;
+
+            }
+                @keyframes fudge {
+                100%{
+                    transform: translate(363px, 1px);
+                    }
+                }
+
+                @keyframes glitch-2 {
+                10%{
+                    transform: skewX(2deg) skewY(2deg);
+                    transition-duration: 3s;
+                    }
+                }
+                @keyframes glitch{
+                    0%{
+                        text-shadow:
+                        0.05em 0 0 rgba(255,0,0,.75),
+                        -0.025em -0.05em 0 rgba(0,255,0,.75),
+                        0.025em 0.05em 0 rgba(0,0,255,.75);   
+                    }
+                    14%{
+                        text-shadow:
+                        0.05em 0 0 rgba(255,0,0,.75),
+                        -0.025em -0.05em 0 rgba(0,255,0,.75),
+                        0.025em 0.05em 0 rgba(0,0,255,.75);   
+                    }
+                    15%{
+                        text-shadow:
+                        -0.05em -0.025em 0 rgba(255,0,0,.75),
+                        0.025em 0.025em 0 rgba(0,255,0,.75),
+                        -0.05em -0.05em 0 rgba(0,0,255,.75);   
+                    }
+                    49%{
+                        text-shadow:
+                        -0.05em -0.025em 0 rgba(255,0,0,.75),
+                        0.025em 0.025em 0 rgba(0,255,0,.75),
+                        -0.05em -0.05em 0 rgba(0,0,255,.75);   
+                    }
+                    50%{
+                        text-shadow:
+                        0.025em 0.05em 0 rgba(255,0,0,.75),
+                        0.05em 0 0 rgba(0,255,0,.75),
+                        0 -0.05em 0 rgba(0,0,255,.75);   
+                    }
+                    99%{
+                        text-shadow:
+                        0.025em 0.05em 0 rgba(255,0,0,.75),
+                        0.05em 0 0 rgba(0,255,0,.75),
+                        0 -0.05em 0 rgba(0,0,255,.75);   
+                    }
+                    100%{
+                        text-shadow:
+                        -0.025em 0 0 rgba(255,0,0,.75),
+                        -0.025em -0.025em 0 rgba(0,255,0,.75),
+                        -0.025em -0.05em 0 rgba(0,0,255,.75);   
+                    }
+                }
+        </style>
